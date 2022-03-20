@@ -13,12 +13,12 @@
 
 
 using namespace std;
-//ôàéëû äîëæíû ñîäåðæàòü îáúÿâëåíèÿ è îïðåäåëåíèÿ êëàññà Date, 
-//ôóíêöèè ParseDate è îïåðàòîðà âûâîäà â ïîòîê äëÿ êëàññà Date;
+//Ñ„Ð°Ð¹Ð»Ñ‹ Ð´Ð¾Ð»Ð¶Ð½Ñ‹ ÑÐ¾Ð´ÐµÑ€Ð¶Ð°Ñ‚ÑŒ Ð¾Ð±ÑŠÂ¤Ð²Ð»ÐµÐ½Ð¸Â¤ Ð¸ Ð¾Ð¿Ñ€ÐµÐ´ÐµÐ»ÐµÐ½Ð¸Â¤ ÐºÐ»Ð°ÑÑÐ° Date, 
+//Ñ„ÑƒÐ½ÐºÑ†Ð¸Ð¸ ParseDate Ð¸ Ð¾Ð¿ÐµÑ€Ð°Ñ‚Ð¾Ñ€Ð° Ð²Ñ‹Ð²Ð¾Ð´Ð° Ð² Ð¿Ð¾Ñ‚Ð¾Ðº Ð´Ð»Â¤ ÐºÐ»Ð°ÑÑÐ° Date;
 
-// êëàññ Date
-// ôóíêöèÿ ParseDate 
-// îïåðàòîð âûâîäà â ïîòîê äëÿ êëàññà Date.
+// ÐºÐ»Ð°ÑÑ Date
+// Ñ„ÑƒÐ½ÐºÑ†Ð¸Â¤ ParseDate 
+// Ð¾Ð¿ÐµÑ€Ð°Ñ‚Ð¾Ñ€ Ð²Ñ‹Ð²Ð¾Ð´Ð° Ð² Ð¿Ð¾Ñ‚Ð¾Ðº Ð´Ð»Â¤ ÐºÐ»Ð°ÑÑÐ° Date.
 
 class Date {
 public:
@@ -29,31 +29,15 @@ public:
 		, MONTH(month)
 		, DAY(day) {
 	}
-	//Date(const int& year,
-	//	const int& month,
-	//	const int& day) {
-	//	YEAR = year;
-	//	if (month > 12 || month < 1) {
-	//		throw invalid_argument("");
-	//	}
-	//	MONTH = month;
-	//	if (day > 31 || day < 1) {
-	//		throw invalid_argument("");
-	//	}
-	//	DAY = day;
-	//}
 
 	int GetYear() const;
 	int GetMonth() const;
 	int GetDay() const;
 
 private:
-	const int YEAR;	// öåëîå ÷èñëî îò 0 äî 9999
-	const int MONTH;	// íîìåð ìåñÿöà îò 1 äî 12 âêëþ÷èòåëüíî
-	const int DAY;		// íîìåð äíÿ îò 1 äî 31 âêëþ÷èòåëüíî
-	//int YEAR;	// öåëîå ÷èñëî îò 0 äî 9999
-	//int MONTH;	// íîìåð ìåñÿöà îò 1 äî 12 âêëþ÷èòåëüíî
-	//int DAY;		// íîìåð äíÿ îò 1 äî 31 âêëþ÷èòåëüíî
+	const int YEAR;	// Ñ†ÐµÐ»Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾ Ð¾Ñ‚ 0 Ð´Ð¾ 9999
+	const int MONTH;	// Ð½Ð¾Ð¼ÐµÑ€ Ð¼ÐµÑÂ¤Ñ†Ð° Ð¾Ñ‚ 1 Ð´Ð¾ 12 Ð²ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾
+	const int DAY;		// Ð½Ð¾Ð¼ÐµÑ€ Ð´Ð½Â¤ Ð¾Ñ‚ 1 Ð´Ð¾ 31 Ð²ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾
 };
 
 //void CheckSimbol(istream& is);
